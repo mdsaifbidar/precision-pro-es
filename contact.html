@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Precision Pro Engineering Services</title>
+    <meta name="description" content="Contact Precision Pro Engineering Services for expert HVAC estimation and costing services. Get a free consultation and quote for your project.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Precision Pro</h2>
+                <span>Engineering Services</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="industries.html" class="nav-link">Industries</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in">Contact Us</h1>
+            <p class="fade-in">Ready to get started? Contact our team of HVAC estimation experts for a free consultation and customized quote for your project.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Contact Form -->
+                <div class="fade-in-up">
+                    <div class="contact-form">
+                        <h2>Get Your Free Quote</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours with a detailed proposal for your HVAC estimation needs.</p>
+                        
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company/Organization *</label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="projectType">Project Type *</label>
+                                    <select id="projectType" name="projectType" required>
+                                        <option value="">Select Project Type</option>
+                                        <option value="commercial">Commercial</option>
+                                        <option value="residential">Residential</option>
+                                        <option value="industrial">Industrial</option>
+                                        <option value="healthcare">Healthcare</option>
+                                        <option value="educational">Educational</option>
+                                        <option value="government">Government</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="projectSize">Project Size (sq ft)</label>
+                                    <input type="text" id="projectSize" name="projectSize" placeholder="e.g., 50,000">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="timeline">Project Timeline</label>
+                                    <select id="timeline" name="timeline">
+                                        <option value="">Select Timeline</option>
+                                        <option value="immediate">Immediate (1-2 weeks)</option>
+                                        <option value="short">Short-term (1 month)</option>
+                                        <option value="medium">Medium-term (2-3 months)</option>
+                                        <option value="long">Long-term (6+ months)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="budget">Estimated HVAC Budget</label>
+                                    <select id="budget" name="budget">
+                                        <option value="">Select Budget Range</option>
+                                        <option value="under-100k">Under $100K</option>
+                                        <option value="100k-500k">$100K - $500K</option>
+                                        <option value="500k-1m">$500K - $1M</option>
+                                        <option value="1m-5m">$1M - $5M</option>
+                                        <option value="over-5m">Over $5M</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="services">Services Needed</label>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem;">
+                                    <label style="display: flex; align-items: center; font-weight: normal;">
+                                        <input type="checkbox" name="services" value="estimation" style="margin-right: 0.5rem;">
+                                        HVAC Estimation
+                                    </label>
+                                    <label style="display: flex; align-items: center; font-weight: normal;">
+                                        <input type="checkbox" name="services" value="cost-analysis" style="margin-right: 0.5rem;">
+                                        Cost Analysis
+                                    </label>
+                                    <label style="display: flex; align-items: center; font-weight: normal;">
+                                        <input type="checkbox" name="services" value="consulting" style="margin-right: 0.5rem;">
+                                        Technical Consulting
+                                    </label>
+                                    <label style="display: flex; align-items: center; font-weight: normal;">
+                                        <input type="checkbox" name="services" value="value-engineering" style="margin-right: 0.5rem;">
+                                        Value Engineering
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" required placeholder="Please describe your project, including building type, special requirements, and any specific HVAC needs or challenges..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Request</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="fade-in-up">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Our team of HVAC estimation experts is ready to help you with your next project. Contact us today for a free consultation.</p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item-info">
+                                <h4>Email</h4>
+                                <p>info@precisionpro.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item-info">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item-info">
+                                <h4>Address</h4>
+                                <p>123 Engineering Blvd<br>Tech City, TC 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item-info">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e2e8f0;">
+                            <h4>Download Our Company Profile</h4>
+                            <p style="margin-bottom: 1rem;">Get detailed information about our services, capabilities, and past projects.</p>
+                            <a href="#" class="btn btn-secondary" style="display: inline-block;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; margin-right: 0.5rem;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7,10 12,15 17,10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Our Location</h2>
+            <div class="map-container fade-in-up">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 60px; height: 60px; margin-bottom: 1rem; color: var(--primary-color);">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <h3>Visit Our Office</h3>
+                    <p>123 Engineering Blvd, Tech City, TC 12345</p>
+                    <p style="margin-top: 0.5rem; color: var(--text-color);">Conveniently located in the heart of the engineering district</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="content-grid">
+                <div class="fade-in-up">
+                    <h4>How long does an HVAC estimate take?</h4>
+                    <p>Most estimates are completed within 1-3 weeks depending on project complexity. We provide expedited services for urgent projects.</p>
+                    
+                    <h4>What information do you need to start?</h4>
+                    <p>We need architectural plans, project specifications, and any special requirements. We can work with preliminary drawings for early estimates.</p>
+                    
+                    <h4>Do you provide value engineering services?</h4>
+                    <p>Yes, we offer comprehensive value engineering to optimize costs while maintaining performance and code compliance.</p>
+                </div>
+                <div class="fade-in-up">
+                    <h4>What's included in your estimates?</h4>
+                    <p>Our estimates include equipment, materials, labor, installation costs, permits, and recommended contingencies with detailed breakdowns.</p>
+                    
+                    <h4>Do you work on projects outside your local area?</h4>
+                    <p>Yes, we provide HVAC estimation services nationwide and can adjust for regional cost variations and local codes.</p>
+                    
+                    <h4>What file formats do you accept?</h4>
+                    <p>We work with AutoCAD, Revit, PDF plans, and most standard architectural file formats. Contact us for specific requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Don't let HVAC costs surprise you. Get an accurate, detailed estimate from the industry experts. Contact us today for your free consultation.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+1-555-123-4567" class="btn btn-primary">Call Now</a>
+                    <a href="mailto:info@precisionpro.com" class="btn btn-secondary">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Precision Pro</h3>
+                        <span>Engineering Services</span>
+                    </div>
+                    <p>Leading HVAC estimation and costing services with precision, expertise, and results you can trust.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">HVAC Estimation</a></li>
+                        <li><a href="services.html">Cost Analysis</a></li>
+                        <li><a href="services.html">Technical Consulting</a></li>
+                        <li><a href="services.html">Project Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Industries</h4>
+                    <ul>
+                        <li><a href="industries.html">Commercial</a></li>
+                        <li><a href="industries.html">Residential</a></li>
+                        <li><a href="industries.html">Industrial</a></li>
+                        <li><a href="industries.html">Healthcare</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📧 info@precisionpro.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Engineering Blvd, Tech City, TC 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Precision Pro Engineering Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <div class="floating-contact">
+        <a href="contact.html" class="floating-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
