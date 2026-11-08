@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precisionpro Engineering Services - Leading HVAC Estimation & Costing</title>
+    <title>Precisionpro Engineering Services - Leading HVAC Estimation &amp; Costing</title>
     <meta name="description" content="Professional HVAC estimation and costing services for commercial, residential, and industrial projects. Precision, expertise, and results you can trust.">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,213 +13,209 @@
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preload" as="image" href="images/about_2.jpeg">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="./index.html">
-  <img src="./images/precision_pro_es_logo.png" alt="Precisionpro Logo" style="height: 60px;">
-</a>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="industries.html" class="nav-link">Industries</a></li>
-                <!-- <li><a href="projects.html" class="nav-link">Projects</a></li> -->
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a class="nav__logo" href="index.html" aria-label="Precisionpro home">
+                <img src="images/precision_pro_es_logo.png" alt="Precisionpro Engineering Services" width="500" height="130">
+            </a>
+            <nav class="nav__links" aria-label="Primary">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="industries.html">Industries</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn--primary btn--sm nav__cta" href="contact.html">Get Sample Project</a>
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text fade-in">
-                <h1>Projects Performance Effeciency Streamlined</h1>
-                <p>Leading HVAC estimation and costing services for complex engineering projects across all industries.</p>
-                <div class="hero-buttons">
-                    <a href="services.html" class="btn btn-primary">Explore Services</a>
-                    <a href="contact.html" class="btn btn-secondary">Get Sample Project</a>
-                </div>
-            </div>
-            <div class="hero-image slide-in-right">
-                <div class="hero-graphic">
-                    <div class="hero-image"></div>
-                </div>
-            </div>
+    <div class="menu" id="menu">
+        <nav class="menu__links" aria-label="Mobile">
+            <a href="index.html" aria-current="page" style="--i:0"><small>01</small>Home</a>
+            <a href="about.html" style="--i:1"><small>02</small>About</a>
+            <a href="services.html" style="--i:2"><small>03</small>Services</a>
+            <a href="industries.html" style="--i:3"><small>04</small>Industries</a>
+            <a href="contact.html" style="--i:4"><small>05</small>Contact</a>
+        </nav>
+        <div class="menu__foot">
+            <a href="mailto:precisionproes@outlook.com">precisionproes@outlook.com</a>
+            <a href="tel:+18609094502">+1 (860) 909-4502</a>
+            <a class="btn btn--primary" href="contact.html">Get Sample Project <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-    </section>
+    </div>
 
-    <!-- Services Overview -->
-    <section class="services-overview">
-        <div class="container">
-            <h2 class="section-title">Our Core Services</h2>
-            <div class="services-grid">
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 11H5a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h4m6-6h4a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-4m-6 0V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-2"/>
-                        </svg>
+    <main id="main">
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="mesh" aria-hidden="true"></div>
+            <div class="blueprint" aria-hidden="true"></div>
+
+            <div class="container hero__inner">
+                <div class="hero__copy">
+                    <h1 class="hero__title">
+                        <span class="line"><span style="--i:0">Projects</span></span>
+                        <span class="line"><span style="--i:1">Performance</span></span>
+                        <span class="line"><span style="--i:2">Efficiency</span></span>
+                        <span class="line"><span style="--i:3" class="grad-text">Streamlined</span></span>
+                    </h1>
+                    <p class="lead hero__lead fade-load" style="--d:.7s">Leading HVAC estimation and costing services for complex engineering projects across all industries.</p>
+                    <div class="hero__actions fade-load" style="--d:.85s">
+                        <a href="services.html" class="btn btn--primary magnetic">Explore Services <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                        <a href="contact.html" class="btn btn--ghost magnetic">Get Sample Project</a>
                     </div>
-                    <h3>HVAC Estimation</h3>
-                    <p>Precise cost estimation for heating, ventilation, and air conditioning systems using industry-leading software and methodologies.</p>
                 </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
+
+                <div class="hero__visual fade-load" style="--d:.4s">
+                    <div class="frame">
+                        <img src="images/about_2.jpeg" alt="Engineer reviewing building plans on a laptop" width="1280" height="960">
                     </div>
-                    <h3>Cost Analysis</h3>
-                    <p>Comprehensive cost breakdowns and analysis to optimize project budgets and ensure maximum value delivery.</p>
-                </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14,2 14,8 20,8"/>
-                            <line x1="16" y1="13" x2="8" y2="13"/>
-                            <line x1="16" y1="17" x2="8" y2="17"/>
-                            <polyline points="10,9 9,9 8,9"/>
-                        </svg>
-                    </div>
-                    <h3>Technical Consulting</h3>
-                    <p>Expert consulting services for complex HVAC projects, ensuring compliance with industry standards and regulations.</p>
+                    <div class="ticks" aria-hidden="true"><span></span></div>
+                    <span class="chip chip--blue">HVAC Estimation</span>
+                    <span class="chip chip--cyan">Cost Analysis</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Industries Section -->
-    <section class="industries-section">
-        <div class="container">
-            <h2 class="section-title">Industries We Serve</h2>
-            <div class="industries-grid">
-                <div class="industry-card fade-in-up">
-                    <div class="industry-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                            <polyline points="9,22 9,12 15,12 15,22"/>
-                        </svg>
+            <div class="hero__foot fade-load" style="--d:1.1s">
+                <div class="marquee" aria-label="Industries we serve">
+                    <div class="marquee__track">
+                        <span>Residential</span><span>Commercial</span><span>Industrial</span><span>Healthcare</span><span>Educational</span>
+                        <span>Residential</span><span>Commercial</span><span>Industrial</span><span>Healthcare</span><span>Educational</span>
                     </div>
-                    <h3>Residential</h3>
-                    <p>Single-family homes, apartments, and residential developments</p>
-                </div>
-                <div class="industry-card fade-in-up">
-                    <div class="industry-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 21h18"/>
-                            <path d="M5 21V7l8-4v18"/>
-                            <path d="M19 21V11l-6-4"/>
-                        </svg>
+                    <div class="marquee__track" aria-hidden="true">
+                        <span>Residential</span><span>Commercial</span><span>Industrial</span><span>Healthcare</span><span>Educational</span>
+                        <span>Residential</span><span>Commercial</span><span>Industrial</span><span>Healthcare</span><span>Educational</span>
                     </div>
-                    <h3>Commercial</h3>
-                    <p>Office buildings, retail spaces, and commercial complexes</p>
-                </div>
-                <div class="industry-card fade-in-up">
-                    <div class="industry-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
-                    </div>
-                    <h3>Industrial</h3>
-                    <p>Manufacturing facilities, warehouses, and industrial complexes</p>
-                </div>
-                <div class="industry-card fade-in-up">
-                    <div class="industry-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                        </svg>
-                    </div>
-                    <h3>Healthcare</h3>
-                    <p>Hospitals, clinics, and medical facilities</p>
-                </div>
-                <div class="industry-card fade-in-up">
-                    <div class="industry-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                        </svg>
-                    </div>
-                    <h3>Educational</h3>
-                    <p>Schools, universities, and educational institutions</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Testimonials -->
-    <!-- <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-in-up">
-                    <div class="testimonial-content">
-                        <p>"Precisionpro delivered exceptional HVAC cost estimates for our 50-story commercial tower. Their accuracy saved us 15% on the project budget."</p>
-                        <div class="testimonial-author">
-                            <strong>Michael Chen</strong>
-                            <span>Project Manager, Metro Construction</span>
+        <!-- Services Overview -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head section-head--split">
+                    <div style="display:grid; gap:20px">
+                        <span class="eyebrow" data-reveal>Services</span>
+                        <h2 class="h2" data-reveal>Our Core <span class="grad-text">Services</span></h2>
+                    </div>
+                    <a href="services.html" class="btn btn--ghost" data-reveal style="justify-self:start">Explore Services <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                </div>
+
+                <div class="bento" data-stagger>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon">
+                                <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11H5a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h4m6-6h4a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-4m-6 0V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-2"/></svg>
+                            </div>
+                            <span class="card__index">01</span>
                         </div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-in-up">
-                    <div class="testimonial-content">
-                        <p>"Their technical expertise and attention to detail is unmatched. We've worked with them on multiple healthcare projects with outstanding results."</p>
-                        <div class="testimonial-author">
-                            <strong>Sarah Johnson</strong>
-                            <span>MEP Engineer, HealthBuild Solutions</span>
+                        <h3>HVAC Estimation</h3>
+                        <p>Precise cost estimation for heating, ventilation, and air conditioning systems using industry-leading software and methodologies.</p>
+                        <svg class="card__art" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="url(#g1)" stroke-width="1">
+                            <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#2563eb" stop-opacity=".35"/><stop offset="1" stop-color="#06b6d4" stop-opacity=".15"/></linearGradient></defs>
+                            <circle cx="100" cy="100" r="30"/><circle cx="100" cy="100" r="55"/><circle cx="100" cy="100" r="80"/>
+                            <path d="M100 70c18 0 22 30 0 30s-18 30 0 30M70 100c0-18 30-22 30 0s30 18 30 0"/>
+                        </svg>
+                    </article>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon card__icon--alt">
+                                <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <span class="card__index">02</span>
                         </div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-in-up">
-                    <div class="testimonial-content">
-                        <p>"Fast turnaround, accurate estimates, and professional service. Precisionpro is our go-to partner for all HVAC estimation needs."</p>
-                        <div class="testimonial-author">
-                            <strong>David Rodriguez</strong>
-                            <span>Director, Industrial Systems Inc.</span>
+                        <h3>Cost Analysis</h3>
+                        <p>Comprehensive cost breakdowns and analysis to optimize project budgets and ensure maximum value delivery.</p>
+                    </article>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon">
+                                <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
+                            </div>
+                            <span class="card__index">03</span>
                         </div>
-                    </div>
+                        <h3>Technical Consulting</h3>
+                        <p>Expert consulting services for complex HVAC projects, ensuring compliance with industry standards and regulations.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Start Your Project?</h2>
-                <p style="color: white;">Get accurate HVAC estimates and expert consulting for your next project. Contact us today for a free consultation.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Get Sample Project</a>
-                    <!-- <a href="tel:+1-555-0123" class="btn btn-secondary">Call Now</a> -->
+        <!-- Industries -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow" data-reveal>Industries</span>
+                    <h2 class="h2" data-reveal>Industries We <span class="grad-text">Serve</span></h2>
+                </div>
+
+                <div class="rows" data-stagger>
+                    <a class="row" href="industries.html#residential" data-img="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop" data-reveal>
+                        <span class="row__idx">01</span>
+                        <span class="row__title">Residential</span>
+                        <span class="row__desc">Single-family homes, apartments, and residential developments</span>
+                        <span class="row__arrow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </a>
+                    <a class="row" href="industries.html#commercial" data-img="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop" data-reveal>
+                        <span class="row__idx">02</span>
+                        <span class="row__title">Commercial</span>
+                        <span class="row__desc">Office buildings, retail spaces, and commercial complexes</span>
+                        <span class="row__arrow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </a>
+                    <a class="row" href="industries.html#industrial" data-img="https://images.pexels.com/photos/236698/pexels-photo-236698.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop" data-reveal>
+                        <span class="row__idx">03</span>
+                        <span class="row__title">Industrial</span>
+                        <span class="row__desc">Manufacturing facilities, warehouses, and industrial complexes</span>
+                        <span class="row__arrow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </a>
+                    <a class="row" href="industries.html#healthcare" data-img="https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop" data-reveal>
+                        <span class="row__idx">04</span>
+                        <span class="row__title">Healthcare</span>
+                        <span class="row__desc">Hospitals, clinics, and medical facilities</span>
+                        <span class="row__arrow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </a>
+                    <a class="row" href="industries.html#educational" data-img="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop" data-reveal>
+                        <span class="row__idx">05</span>
+                        <span class="row__title">Educational</span>
+                        <span class="row__desc">Schools, universities, and educational institutions</span>
+                        <span class="row__arrow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta">
+            <div class="container">
+                <div class="cta__panel" data-reveal>
+                    <span class="eyebrow eyebrow--light" style="margin-bottom:24px">Get started</span>
+                    <h2>Ready to Start Your <span class="grad-text">Project?</span></h2>
+                    <p class="lead">Get accurate HVAC estimates and expert consulting for your next project. Contact us today for a free consultation.</p>
+                    <div class="cta__actions">
+                        <a href="contact.html" class="btn btn--primary magnetic">Get Sample Project <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <h3>Precisionpro</h3>
-                        <span>Engineering Services</span>
-                    </div>
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="images/precision_pro_es_logo.png" alt="Precisionpro Engineering Services" width="500" height="130" loading="lazy">
                     <p>Leading HVAC estimation and costing services with precision, expertise, and results you can trust.</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer__col">
                     <h4>Services</h4>
                     <ul>
                         <li><a href="services.html">HVAC Estimation</a></li>
@@ -227,39 +224,36 @@
                         <li><a href="services.html">Project Management</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer__col">
                     <h4>Industries</h4>
                     <ul>
-                        <li><a href="industries.html">Commercial</a></li>
-                        <li><a href="industries.html">Residential</a></li>
-                        <li><a href="industries.html">Industrial</a></li>
-                        <li><a href="industries.html">Healthcare</a></li>
+                        <li><a href="industries.html#commercial">Commercial</a></li>
+                        <li><a href="industries.html#residential">Residential</a></li>
+                        <li><a href="industries.html#industrial">Industrial</a></li>
+                        <li><a href="industries.html#healthcare">Healthcare</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer__col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>📧 precisionproes@outlook.com</li>
-                        <li>📞 +1 (860) 909-4502</li>
-                        <li>📍 Karnataka, India</li>
+                        <li><a class="with-icon" href="mailto:precisionproes@outlook.com"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>precisionproes@outlook.com</a></li>
+                        <li><a class="with-icon" href="tel:+18609094502"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+1 (860) 909-4502</a></li>
+                        <li class="with-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Karnataka, India</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer__wordmark" aria-hidden="true">Precisionpro</div>
+            <div class="footer__bottom">
                 <p>&copy; 2025 Precisionpro Engineering Services. All rights reserved.</p>
+                <a class="to-top" href="#main">Back to top <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             </div>
         </div>
     </footer>
 
-    <!-- Floating Contact Button -->
-    <div class="floating-contact">
-        <a href="contact.html" class="floating-btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-        </a>
-    </div>
+    <a href="contact.html" class="fab" aria-label="Contact us">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </a>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js" defer></script>
 </body>
 </html>

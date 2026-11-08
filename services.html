@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Precisionpro Engineering Services</title>
-    <meta name="description" content="Comprehensive HVAC estimation and costing services including cost analysis, technical consulting, and project management for all industries.">
+    <meta name="description" content="Comprehensive HVAC estimation and costing solutions tailored to your project needs and industry requirements.">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,289 +13,277 @@
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="icon" type="image/png" href="images/logo.png">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="./index.html">
-  <img src="./images/precision_pro_es_logo.png" alt="Precisionpro Logo" style="height: 60px;">
-</a>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="industries.html" class="nav-link">Industries</a></li>
-                <!-- <li><a href="projects.html" class="nav-link">Projects</a></li> -->
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a class="nav__logo" href="index.html" aria-label="Precisionpro home">
+                <img src="images/precision_pro_es_logo.png" alt="Precisionpro Engineering Services" width="500" height="130">
+            </a>
+            <nav class="nav__links" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html" aria-current="page">Services</a>
+                <a href="industries.html">Industries</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn--primary btn--sm nav__cta" href="contact.html">Get Sample Project</a>
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="fade-in">Our Services</h1>
-            <p class="fade-in" style="color: white;">Comprehensive HVAC estimation and costing solutions tailored to your project needs and industry requirements.</p>
+    <div class="menu" id="menu">
+        <nav class="menu__links" aria-label="Mobile">
+            <a href="index.html" style="--i:0"><small>01</small>Home</a>
+            <a href="about.html" style="--i:1"><small>02</small>About</a>
+            <a href="services.html" aria-current="page" style="--i:2"><small>03</small>Services</a>
+            <a href="industries.html" style="--i:3"><small>04</small>Industries</a>
+            <a href="contact.html" style="--i:4"><small>05</small>Contact</a>
+        </nav>
+        <div class="menu__foot">
+            <a href="mailto:precisionproes@outlook.com">precisionproes@outlook.com</a>
+            <a href="tel:+18609094502">+1 (860) 909-4502</a>
+            <a class="btn btn--primary" href="contact.html">Get Sample Project <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-    </section>
+    </div>
 
-    <!-- Main Services -->
-    <section class="content-section">
-        <div class="container">
-            <div class="services-grid">
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 11H5a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h4m6-6h4a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-4m-6 0V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-2"/>
-                        </svg>
-                    </div>
-                    <h3>HVAC System Estimation</h3>
-                    <p>Detailed cost estimates for heating, ventilation, and air conditioning systems including equipment, materials, labor, and installation costs.</p>
-                    <ul class="feature-list">
-                        <li>Equipment sizing and selection</li>
-                        <li>Ductwork and piping calculations</li>
-                        <li>Control systems integration</li>
-                        <li>Energy efficiency analysis</li>
-                    </ul>
-                </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <h3>Cost Analysis & Optimization</h3>
-                    <p>Comprehensive cost breakdowns and value engineering to optimize project budgets while maintaining performance standards.</p>
-                    <ul class="feature-list">
-                        <li>Life cycle cost analysis</li>
-                        <li>Value engineering studies</li>
-                        <li>Budget optimization strategies</li>
-                        <li>ROI calculations</li>
-                    </ul>
-                </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14,2 14,8 20,8"/>
-                            <line x1="16" y1="13" x2="8" y2="13"/>
-                            <line x1="16" y1="17" x2="8" y2="17"/>
-                        </svg>
-                    </div>
-                    <h3>Technical Consulting</h3>
-                    <p>Expert consulting services for complex HVAC projects, ensuring compliance with codes, standards, and best practices.</p>
-                    <ul class="feature-list">
-                        <li>Code compliance review</li>
-                        <li>System design validation</li>
-                        <li>Performance specifications</li>
-                        <li>Quality assurance</li>
-                    </ul>
+    <main id="main">
+        <!-- Page Header -->
+        <section class="page-hero">
+            <div class="mesh" aria-hidden="true"></div>
+            <div class="blueprint" aria-hidden="true"></div>
+            <div class="container">
+                <div class="page-hero__inner">
+                    <span class="crumb fade-load" style="--d:.1s"><a href="index.html">Home</a> / Services</span>
+                    <h1 data-split>Our <span class="grad-text">Services</span></h1>
+                    <p class="lead fade-load" style="--d:.6s">Comprehensive HVAC estimation and costing solutions tailored to your project needs and industry requirements.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Detailed Service Breakdown -->
-    <section class="content-section">
-        <div class="container">
-            <h2 class="section-title">Service Details</h2>
-            
-            <!-- HVAC Estimation -->
-            <div class="content-grid">
-                <div class="content-text fade-in-up">
-                    <h3>HVAC System Estimation</h3>
-                    <p>Our HVAC estimation services provide detailed, accurate cost projections for all mechanical systems. We analyze every component from initial design through installation and commissioning.</p>
-                    
-                    <h4>What's Included:</h4>
-                    <ul class="feature-list">
-                        <li>Equipment specifications and pricing</li>
-                        <li>Material takeoffs and quantities</li>
-                        <li>Labor hour calculations</li>
-                        <li>Installation complexity factors</li>
-                        <li>Permit and inspection costs</li>
-                        <li>Contingency recommendations</li>
-                    </ul>
-                    
-                    <h4>Deliverables:</h4>
-                    <ul class="feature-list">
-                        <li>Detailed cost breakdown by system</li>
-                        <li>Equipment schedules and specifications</li>
-                        <li>Material quantity reports</li>
-                        <li>Labor hour summaries</li>
-                        <li>Project timeline estimates</li>
-                    </ul>
-                </div>
-                <div class="content-image fade-in-up">
-                    <img src="./images/services_1.jpeg?auto=compress&cs=tinysrgb&w=600&h=500&fit=crop" 
-                         alt="HVAC system installation" 
-                         style="width: 100%; height: 500px; object-fit: cover; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+        <!-- Main Services -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-3" data-stagger>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11H5a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h4m6-6h4a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-4m-6 0V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-2"/></svg></div>
+                            <span class="card__index">01</span>
+                        </div>
+                        <h3>HVAC System Estimation</h3>
+                        <p>Detailed cost estimates for heating, ventilation, and air conditioning systems including equipment, materials, labor, and installation costs.</p>
+                        <ul class="checklist">
+                            <li>Equipment sizing and selection</li>
+                            <li>Ductwork and piping calculations</li>
+                            <li>Control systems integration</li>
+                            <li>Energy efficiency analysis</li>
+                        </ul>
+                    </article>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon card__icon--alt"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                            <span class="card__index">02</span>
+                        </div>
+                        <h3>Cost Analysis &amp; Optimization</h3>
+                        <p>Comprehensive cost breakdowns and value engineering to optimize project budgets while maintaining performance standards.</p>
+                        <ul class="checklist">
+                            <li>Life cycle cost analysis</li>
+                            <li>Value engineering studies</li>
+                            <li>Budget optimization strategies</li>
+                            <li>ROI calculations</li>
+                        </ul>
+                    </article>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+                            <span class="card__index">03</span>
+                        </div>
+                        <h3>Technical Consulting</h3>
+                        <p>Expert consulting services for complex HVAC projects, ensuring compliance with codes, standards, and best practices.</p>
+                        <ul class="checklist">
+                            <li>Code compliance review</li>
+                            <li>System design validation</li>
+                            <li>Performance specifications</li>
+                            <li>Quality assurance</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Cost Analysis -->
-    <section class="content-section">
-        <div class="container">
-            <div class="content-grid">
-                <div class="content-image fade-in-up">
-                    <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600&h=500&fit=crop" 
-                         alt="Cost analysis charts" 
-                         style="width: 100%; height: 500px; object-fit: cover; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+        <!-- Service Details: HVAC Estimation -->
+        <section class="section section--line">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow" data-reveal>In depth</span>
+                    <h2 class="h2" data-reveal>Service <span class="grad-text">Details</span></h2>
                 </div>
-                <div class="content-text fade-in-up">
-                    <h3>Cost Analysis & Optimization</h3>
-                    <p>Beyond basic estimation, we provide comprehensive cost analysis to help you make informed decisions and optimize your investment.</p>
-                    
-                    <h4>Analysis Types:</h4>
-                    <ul class="feature-list">
-                        <li>Initial capital cost analysis</li>
-                        <li>Operating cost projections</li>
-                        <li>Maintenance cost estimates</li>
-                        <li>Energy consumption analysis</li>
-                        <li>Replacement cost planning</li>
-                        <li>Total cost of ownership</li>
-                    </ul>
-                    
-                    <h4>Optimization Services:</h4>
-                    <ul class="feature-list">
-                        <li>Alternative system comparisons</li>
-                        <li>Energy efficiency upgrades</li>
-                        <li>Phased implementation strategies</li>
-                        <li>Budget allocation recommendations</li>
-                        <li>Risk assessment and mitigation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Software & Tools -->
-    <section class="content-section">
-        <div class="container">
-            <h2 class="section-title">Software & Tools</h2>
-            <p style="text-align: center; margin-bottom: 3rem;">We leverage industry-leading software and proprietary tools to ensure accuracy and efficiency in our estimations.</p>
-            
-            <div class="services-grid">
-                <!-- <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <circle cx="9" cy="9" r="2"/>
-                            <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
-                        </svg>
+                <div class="split split--top">
+                    <div class="prose">
+                        <h3 class="h3" data-reveal style="margin-bottom:20px">HVAC System Estimation</h3>
+                        <p data-reveal>Our HVAC estimation services provide detailed, accurate cost projections for all mechanical systems. We analyze every component from initial design through installation and commissioning.</p>
+                        <div class="list-cols" data-reveal style="margin-top:36px">
+                            <div>
+                                <h4>What's Included</h4>
+                                <ul class="checklist">
+                                    <li>Equipment specifications and pricing</li>
+                                    <li>Material takeoffs and quantities</li>
+                                    <li>Labor hour calculations</li>
+                                    <li>Installation complexity factors</li>
+                                    <li>Permit and inspection costs</li>
+                                    <li>Contingency recommendations</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Deliverables</h4>
+                                <ul class="checklist">
+                                    <li>Detailed cost breakdown by system</li>
+                                    <li>Equipment schedules and specifications</li>
+                                    <li>Material quantity reports</li>
+                                    <li>Labor hour summaries</li>
+                                    <li>Project timeline estimates</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <h3>AutoCAD & Revit</h3>
-                    <p>Advanced 3D modeling and design analysis for accurate quantity takeoffs and system visualization.</p>
-                </div> -->
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14,2 14,8 20,8"/>
-                        </svg>
+                    <div class="sticky">
+                        <div class="media" data-reveal="clip">
+                            <img src="images/services_1.jpeg" alt="HVAC system installation" loading="lazy" data-parallax>
+                        </div>
                     </div>
-                    <h3>Bluebeam Revu</h3>
-                    <p>Digital plan review and markup tools for precise measurements and collaborative project management.</p>
                 </div>
-                <!-- <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3>Cost Databases</h3>
-                    <p>Access to comprehensive cost databases including RSMeans, local pricing data, and historical project costs.</p>
-                </div> -->
-                <!-- <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"/>
-                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-                        </svg>
-                    </div>
-                    <h3>Proprietary Tools</h3>
-                    <p>Custom-developed estimation algorithms and templates optimized for different project types and complexities.</p>
-                </div> -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Process -->
-    <section class="content-section">
-        <div class="container">
-            <h2 class="section-title">Our Process</h2>
-            <div class="services-grid">
-                <div class="service-card fade-in-up">
-                    <div class="service-icon" style="background: var(--primary-color); color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">1</div>
-                    <h3>Project Review</h3>
-                    <p>Comprehensive analysis of project documents, specifications, and requirements to understand scope and complexity.</p>
+        <!-- Service Details: Cost Analysis -->
+        <section class="section">
+            <div class="container split split--rev split--top">
+                <div class="prose">
+                    <h3 class="h3" data-reveal style="margin-bottom:20px">Cost Analysis &amp; Optimization</h3>
+                    <p data-reveal>Beyond basic estimation, we provide comprehensive cost analysis to help you make informed decisions and optimize your investment.</p>
+                    <div class="list-cols" data-reveal style="margin-top:36px">
+                        <div>
+                            <h4>Analysis Types</h4>
+                            <ul class="checklist">
+                                <li>Initial capital cost analysis</li>
+                                <li>Operating cost projections</li>
+                                <li>Maintenance cost estimates</li>
+                                <li>Energy consumption analysis</li>
+                                <li>Replacement cost planning</li>
+                                <li>Total cost of ownership</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Optimization Services</h4>
+                            <ul class="checklist">
+                                <li>Alternative system comparisons</li>
+                                <li>Energy efficiency upgrades</li>
+                                <li>Phased implementation strategies</li>
+                                <li>Budget allocation recommendations</li>
+                                <li>Risk assessment and mitigation</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon" style="background: var(--primary-color); color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">2</div>
-                    <h3>Take-off</h3>
-                    <p>Detailed evaluation of HVAC system for project estimation, with a primary focus on air distribution. The take-off includes quantities and specifications of materials, equipment, and labor typically required for HVAC installations. </p>
+                <div class="sticky">
+                    <div class="media" data-reveal="clip">
+                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=900&h=1100&fit=crop" alt="Cost analysis charts" loading="lazy" data-parallax>
+                    </div>
                 </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon" style="background: var(--primary-color); color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">3</div>
-                    <h3>Submission</h3>
-                    <p>Review of HVAC take-off summary outlines the key components and estimated quantities for the mechanical scope of the project.</p>
-                </div>
-                <!-- <div class="service-card fade-in-up">
-                    <div class="service-icon" style="background: var(--primary-color); color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">4</div>
-                    <h3>Quality Review</h3>
-                    <p>Multi-level review process including peer review, technical validation, and final quality assurance checks.</p>
-                </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon" style="background: var(--primary-color); color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">5</div>
-                    <h3>Report Delivery</h3>
-                    <p>Comprehensive estimation report with detailed breakdowns, assumptions, and recommendations delivered on schedule.</p>
-                </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon" style="background: var(--primary-color); color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">6</div>
-                    <h3>Support & Follow-up</h3>
-                    <p>Ongoing support during project execution, including clarifications, updates, and change order analysis.</p>
-                </div> -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Get Started?</h2>
-                <p style="color: white;">Contact us today to discuss your HVAC estimation needs and receive a customized proposal for your project.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Request Quote</a>
-                    <!-- <a href="projects.html" class="btn btn-secondary">View Examples</a> -->
+        <!-- Software & Tools -->
+        <section class="section section--line">
+            <div class="container">
+                <div class="section-head section-head--center">
+                    <span class="eyebrow" data-reveal>Toolkit</span>
+                    <h2 class="h2" data-reveal>Software &amp; <span class="grad-text">Tools</span></h2>
+                    <p class="lead" data-reveal>We leverage industry-leading software and proprietary tools to ensure accuracy and efficiency in our estimations.</p>
+                </div>
+                <article class="card spot feature" data-reveal>
+                    <div class="card__icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                    <div>
+                        <h3>Bluebeam Revu</h3>
+                        <p>Digital plan review and markup tools for precise measurements and collaborative project management.</p>
+                    </div>
+                    <svg class="feature__art" viewBox="0 0 180 120" fill="none" aria-hidden="true">
+                        <rect x="1" y="1" width="178" height="118" rx="10" stroke="#e2e8f0"/>
+                        <path d="M20 90V30h50v25h40v35z" stroke="#94a3b8"/>
+                        <path d="M20 100h90" stroke="#2563eb" stroke-dasharray="3 3"/>
+                        <path d="M20 96v8M110 96v8" stroke="#2563eb"/>
+                        <path d="M120 30v60" stroke="#06b6d4" stroke-dasharray="3 3"/>
+                        <path d="M116 30h8M116 90h8" stroke="#06b6d4"/>
+                        <circle cx="45" cy="60" r="10" stroke="#60a5fa"/>
+                        <path d="M140 40h24M140 52h18M140 64h22" stroke="#cbd5e1"/>
+                    </svg>
+                </article>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow" data-reveal>How we work</span>
+                    <h2 class="h2" data-reveal>Our <span class="grad-text">Process</span></h2>
+                </div>
+                <div class="timeline" data-progress>
+                    <div class="timeline__rail" aria-hidden="true"></div>
+                    <div class="step" data-reveal>
+                        <span class="step__num">01</span>
+                        <article class="card">
+                            <h3>Project Review</h3>
+                            <p>Comprehensive analysis of project documents, specifications, and requirements to understand scope and complexity.</p>
+                        </article>
+                    </div>
+                    <div class="step" data-reveal style="--i:1">
+                        <span class="step__num">02</span>
+                        <article class="card">
+                            <h3>Take-off</h3>
+                            <p>Detailed evaluation of HVAC system for project estimation, with a primary focus on air distribution. The take-off includes quantities and specifications of materials, equipment, and labor typically required for HVAC installations.</p>
+                        </article>
+                    </div>
+                    <div class="step" data-reveal style="--i:2">
+                        <span class="step__num">03</span>
+                        <article class="card">
+                            <h3>Submission</h3>
+                            <p>Review of HVAC take-off summary outlines the key components and estimated quantities for the mechanical scope of the project.</p>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta">
+            <div class="container">
+                <div class="cta__panel" data-reveal>
+                    <span class="eyebrow eyebrow--light" style="margin-bottom:24px">Get started</span>
+                    <h2>Ready to Get <span class="grad-text">Started?</span></h2>
+                    <p class="lead">Contact us today to discuss your HVAC estimation needs and receive a customized proposal for your project.</p>
+                    <div class="cta__actions">
+                        <a href="contact.html" class="btn btn--primary magnetic">Request Quote <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <h3>Precisionpro</h3>
-                        <span>Engineering Services</span>
-                    </div>
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="images/precision_pro_es_logo.png" alt="Precisionpro Engineering Services" width="500" height="130" loading="lazy">
                     <p>Leading HVAC estimation and costing services with precision, expertise, and results you can trust.</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer__col">
                     <h4>Services</h4>
                     <ul>
                         <li><a href="services.html">HVAC Estimation</a></li>
@@ -303,39 +292,36 @@
                         <li><a href="services.html">Project Management</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer__col">
                     <h4>Industries</h4>
                     <ul>
-                        <li><a href="industries.html">Commercial</a></li>
-                        <li><a href="industries.html">Residential</a></li>
-                        <li><a href="industries.html">Industrial</a></li>
-                        <li><a href="industries.html">Healthcare</a></li>
+                        <li><a href="industries.html#commercial">Commercial</a></li>
+                        <li><a href="industries.html#residential">Residential</a></li>
+                        <li><a href="industries.html#industrial">Industrial</a></li>
+                        <li><a href="industries.html#healthcare">Healthcare</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer__col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>📧 precisionproes@outlook.com</li>
-                        <li>📞 +1 (860) 909-4502</li>
-                        <li>📍 Karnataka, India</li>
+                        <li><a class="with-icon" href="mailto:precisionproes@outlook.com"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>precisionproes@outlook.com</a></li>
+                        <li><a class="with-icon" href="tel:+18609094502"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+1 (860) 909-4502</a></li>
+                        <li class="with-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Karnataka, India</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer__wordmark" aria-hidden="true">Precisionpro</div>
+            <div class="footer__bottom">
                 <p>&copy; 2025 Precisionpro Engineering Services. All rights reserved.</p>
+                <a class="to-top" href="#main">Back to top <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             </div>
         </div>
     </footer>
 
-    <!-- Floating Contact Button -->
-    <div class="floating-contact">
-        <a href="contact.html" class="floating-btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-        </a>
-    </div>
+    <a href="contact.html" class="fab" aria-label="Contact us">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </a>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js" defer></script>
 </body>
 </html>

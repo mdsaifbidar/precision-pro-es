@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Precisionpro Engineering Services</title>
     <meta name="description" content="Learn about Precisionpro Engineering Services - our history, mission, team, and commitment to excellence in HVAC estimation and costing.">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,298 +13,222 @@
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="icon" type="image/png" href="images/logo.png">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="./index.html">
-                <img src="./images/precision_pro_es_logo.png" alt="Precisionpro Logo" style="height: 60px;">
-                </a>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="industries.html" class="nav-link">Industries</a></li>
-                <!-- <li><a href="projects.html" class="nav-link">Projects</a></li> -->
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a class="nav__logo" href="index.html" aria-label="Precisionpro home">
+                <img src="images/precision_pro_es_logo.png" alt="Precisionpro Engineering Services" width="500" height="130">
+            </a>
+            <nav class="nav__links" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html" aria-current="page">About</a>
+                <a href="services.html">Services</a>
+                <a href="industries.html">Industries</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn--primary btn--sm nav__cta" href="contact.html">Get Sample Project</a>
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="fade-in">About Precisionpro</h1>
-            <p class="fade-in" style="color: white;">Leading the industry with precision, expertise, and unwavering commitment to excellence in HVAC estimation and costing services.</p>
+    <div class="menu" id="menu">
+        <nav class="menu__links" aria-label="Mobile">
+            <a href="index.html" style="--i:0"><small>01</small>Home</a>
+            <a href="about.html" aria-current="page" style="--i:1"><small>02</small>About</a>
+            <a href="services.html" style="--i:2"><small>03</small>Services</a>
+            <a href="industries.html" style="--i:3"><small>04</small>Industries</a>
+            <a href="contact.html" style="--i:4"><small>05</small>Contact</a>
+        </nav>
+        <div class="menu__foot">
+            <a href="mailto:precisionproes@outlook.com">precisionproes@outlook.com</a>
+            <a href="tel:+18609094502">+1 (860) 909-4502</a>
+            <a class="btn btn--primary" href="contact.html">Get Sample Project <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-    </section>
+    </div>
 
-    <!-- Company Overview -->
-    <section class="content-section">
-        <div class="container">
-            <div class="content-grid">
-                <div class="content-text fade-in-up">
-                    <h2>Our Story</h2>
-                    <p>Precisionpro Engineering Services has grown from a small consulting firm to a leading provider of HVAC estimation and costing services across North America. Our journey began with a simple mission: to deliver unparalleled accuracy and expertise in mechanical engineering cost analysis.</p>
-                    <p>Over the years, we've built a reputation for precision, reliability, and innovation. Our team of certified engineers and cost analysts has successfully completed over 2,500 projects, ranging from small residential developments to large-scale industrial complexes.</p>
-                    <p>Today, we continue to push the boundaries of what's possible in HVAC estimation, leveraging cutting-edge technology and industry best practices to deliver exceptional value to our clients.</p>
-                </div>
-                <div class="content-image fade-in-up">
-                    <img src="./images/about_1.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
-                         alt="Modern office building" 
-                         style="width: 100%; height: 400px; object-fit: cover; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+    <main id="main">
+        <!-- Page Header -->
+        <section class="page-hero">
+            <div class="mesh" aria-hidden="true"></div>
+            <div class="blueprint" aria-hidden="true"></div>
+            <div class="container">
+                <div class="page-hero__inner">
+                    <span class="crumb fade-load" style="--d:.1s"><a href="index.html">Home</a> / About</span>
+                    <h1 data-split>About <span class="grad-text">Precisionpro</span></h1>
+                    <p class="lead fade-load" style="--d:.6s">Leading the industry with precision, expertise, and unwavering commitment to excellence in HVAC estimation and costing services.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Mission & Vision -->
-    <section class="content-section">
-        <div class="container">
-            <div class="content-grid">
-                <div class="content-image fade-in-up">
-                    <img src="./images/meeting.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
-                         alt="Team collaboration" 
-                         style="width: 100%; height: 400px; object-fit: cover; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
-                </div>
-                <div class="content-text fade-in-up">
-                    <h2>Mission & Vision</h2>
-                    <h3>Our Mission</h3>
-                    <p>To provide the most accurate, reliable, and comprehensive HVAC estimation and costing services in the industry, enabling our clients to make informed decisions and achieve project success.</p>
-                    
-                    <h3>Our Vision</h3>
-                    <p>To be the global leader in mechanical engineering cost analysis, setting industry standards for precision, innovation, and client satisfaction.</p>
-                    
-                    <h3>Core Values</h3>
-                    <ul class="feature-list">
-                        <li>Precision in every calculation and analysis</li>
-                        <li>Integrity in all client relationships</li>
-                        <li>Innovation through continuous improvement</li>
-                        <li>Excellence in service delivery</li>
-                        <li>Collaboration with industry partners</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item fade-in-up">
-                    <h3 style="color: white;">2,000+</h3>
-                    <p style="color: white;">Projects Completed</p>
-                </div>
-                <div class="stat-item fade-in-up">
-                    <h3 style="color: white;" >15+</h3>
-                    <p style="color: white;">Years of Experience</p>
-                </div>
-                <div class="stat-item fade-in-up">
-                    <h3 style="color: white;">98%</h3>
-                    <p style="color: white;">Client Satisfaction</p>
-                </div>
-                <div class="stat-item fade-in-up">
-                    <h3 style="color: white;">10+</h3>
-                    <p style="color: white;">Team Members</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <!-- <section class="content-section">
-        <div class="container">
-            <h2 class="section-title">Our Leadership Team</h2>
-            <div class="team-grid">
-                <div class="team-member fade-in-up">
-                    <div class="team-member-image">
-                        <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
-                             alt="John Mitchell" 
-                             style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="team-member-info">
-                        <h3>John Mitchell, P.E.</h3>
-                        <div class="role">Chief Executive Officer</div>
-                        <p>With over 20 years in mechanical engineering, John leads our strategic vision and client relationships. Licensed Professional Engineer with expertise in large-scale commercial HVAC systems.</p>
+        <!-- Our Story -->
+        <section class="section">
+            <div class="container split split--top">
+                <div class="prose">
+                    <span class="eyebrow" data-reveal>Company overview</span>
+                    <h2 class="h2" data-reveal style="margin:20px 0 32px">Our <span class="grad-text">Story</span></h2>
+                    <div data-stagger>
+                        <p data-reveal>Precisionpro Engineering Services has grown from a small consulting firm to a leading provider of HVAC estimation and costing services across North America. Our journey began with a simple mission: to deliver unparalleled accuracy and expertise in mechanical engineering cost analysis.</p>
+                        <p data-reveal>Over the years, we've built a reputation for precision, reliability, and innovation. Our team of certified engineers and cost analysts has successfully completed over 2,500 projects, ranging from small residential developments to large-scale industrial complexes.</p>
+                        <p data-reveal>Today, we continue to push the boundaries of what's possible in HVAC estimation, leveraging cutting-edge technology and industry best practices to deliver exceptional value to our clients.</p>
                     </div>
                 </div>
-                <div class="team-member fade-in-up">
-                    <div class="team-member-image">
-                        <img src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
-                             alt="Sarah Chen" 
-                             style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="team-member-info">
-                        <h3>Sarah Chen, P.E.</h3>
-                        <div class="role">Chief Technical Officer</div>
-                        <p>Sarah oversees our technical operations and quality assurance. Specialized in healthcare and educational facility HVAC systems with 15+ years of industry experience.</p>
-                    </div>
-                </div>
-                <div class="team-member fade-in-up">
-                    <div class="team-member-image">
-                        <img src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
-                             alt="Michael Rodriguez" 
-                             style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="team-member-info">
-                        <h3>Michael Rodriguez</h3>
-                        <div class="role">Director of Cost Analysis</div>
-                        <p>Michael leads our cost analysis division with expertise in construction economics and project management. Certified Cost Professional (CCP) with extensive industrial project experience.</p>
-                    </div>
-                </div>
-                <div class="team-member fade-in-up">
-                    <div class="team-member-image">
-                        <img src="https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
-                             alt="Emily Thompson" 
-                             style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="team-member-info">
-                        <h3>Emily Thompson</h3>
-                        <div class="role">Senior Project Manager</div>
-                        <p>Emily manages our largest client accounts and complex multi-phase projects. PMP certified with a track record of delivering projects on time and within budget.</p>
+                <div class="sticky">
+                    <div class="media" data-reveal="clip">
+                        <img src="images/about_1.jpeg" alt="Modern office building" loading="lazy" data-parallax>
                     </div>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
 
-    <!-- Why Choose Us -->
-    <section class="content-section">
-        <div class="container">
-            <h2 class="section-title">Why Choose Precisionpro?</h2>
-            <div class="services-grid">
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 12l2 2 4-4"/>
-                            <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
-                            <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
-                            <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"/>
-                            <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/>
-                        </svg>
+        <!-- Mission & Vision -->
+        <section class="section">
+            <div class="container split split--rev split--top">
+                <div>
+                    <span class="eyebrow" data-reveal>Purpose</span>
+                    <h2 class="h2" data-reveal style="margin:20px 0 32px">Mission &amp; <span class="grad-text">Vision</span></h2>
+                    <div class="mv" data-stagger>
+                        <article class="card spot" data-reveal>
+                            <h3><span class="card__index">01</span>Our Mission</h3>
+                            <p>To provide the most accurate, reliable, and comprehensive HVAC estimation and costing services in the industry, enabling our clients to make informed decisions and achieve project success.</p>
+                        </article>
+                        <article class="card spot" data-reveal>
+                            <h3><span class="card__index">02</span>Our Vision</h3>
+                            <p>To be the global leader in mechanical engineering cost analysis, setting industry standards for precision, innovation, and client satisfaction.</p>
+                        </article>
+                        <article class="card" data-reveal>
+                            <h3><span class="card__index">03</span>Core Values</h3>
+                            <ul class="values">
+                                <li>Precision in every calculation and analysis</li>
+                                <li>Integrity in all client relationships</li>
+                                <li>Innovation through continuous improvement</li>
+                                <li>Excellence in service delivery</li>
+                                <li>Collaboration with industry partners</li>
+                            </ul>
+                        </article>
                     </div>
-                    <h3>Proven Accuracy</h3>
-                    <p>Our estimates consistently achieve 99%+ accuracy rates, helping clients avoid costly overruns and budget surprises.</p>
                 </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <polyline points="12,6 12,12 16,14"/>
-                        </svg>
+                <div class="sticky">
+                    <div class="media" data-reveal="clip">
+                        <img src="images/meeting.jpeg" alt="Team collaboration" loading="lazy" data-parallax>
                     </div>
-                    <h3>Fast Turnaround</h3>
-                    <p>Advanced tools and streamlined processes enable us to deliver comprehensive estimates in record time without compromising quality.</p>
-                </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <h3>Industry Expertise</h3>
-                    <p>Deep knowledge across all industry sectors, from healthcare and education to industrial and commercial applications.</p>
-                </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                    </div>
-                    <h3>Dedicated Support</h3>
-                    <p>Personal project managers and direct access to our engineering team throughout your project lifecycle.</p>
-                </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3>Advanced Technology</h3>
-                    <p>Latest estimation software including AutoCAD, Revit, Bluebeam, and proprietary cost analysis tools.</p>
-                </div>
-                <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 11H5a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h4m6-6h4a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-4m-6 0V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-2"/>
-                        </svg>
-                    </div>
-                    <h3>Quality Assurance</h3>
-                    <p>Multi-level review process and quality control measures ensure every estimate meets our exacting standards.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Certifications -->
-    <!-- <section class="content-section">
-        <div class="container">
-            <h2 class="section-title">Certifications & Compliance</h2>
-            <div class="certifications">
-                <div class="certification-badge fade-in-up">
-                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🏆</div>
-                    <p>ASHRAE Member</p>
-                </div>
-                <div class="certification-badge fade-in-up">
-                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">📋</div>
-                    <p>ISO 9001:2015</p>
-                </div>
-                <div class="certification-badge fade-in-up">
-                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">⚡</div>
-                    <p>NECA Member</p>
-                </div>
-                <div class="certification-badge fade-in-up">
-                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🔧</div>
-                    <p>SMACNA Certified</p>
-                </div>
-                <div class="certification-badge fade-in-up">
-                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🎓</div>
-                    <p>PE Licensed</p>
+        <!-- Stats -->
+        <section class="section section--tight">
+            <div class="container">
+                <div class="stats" data-reveal>
+                    <div class="stat">
+                        <span class="stat__num" data-count="2000" data-suffix="+">2,000+</span>
+                        <span class="stat__label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num" data-count="15" data-suffix="+">15+</span>
+                        <span class="stat__label">Years of Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num" data-count="98" data-suffix="%">98%</span>
+                        <span class="stat__label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num" data-count="10" data-suffix="+">10+</span>
+                        <span class="stat__label">Team Members</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Work with the Best?</h2>
-                <p style="color: white;">Join hundreds of satisfied clients who trust Precisionpro for their HVAC estimation needs. Contact us today to discuss your project.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Get Sample Project</a>
-                    <!-- <a href="projects.html" class="btn btn-secondary">View Our Work</a> -->
+        <!-- Why Choose Us -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head section-head--center">
+                    <span class="eyebrow" data-reveal>Why us</span>
+                    <h2 class="h2" data-reveal>Why Choose <span class="grad-text">Precisionpro?</span></h2>
+                </div>
+                <div class="grid-3" data-stagger>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
+                            <span class="card__index">01</span>
+                        </div>
+                        <h3>Proven Accuracy</h3>
+                        <p>Our estimates consistently achieve 99%+ accuracy rates, helping clients avoid costly overruns and budget surprises.</p>
+                    </article>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon card__icon--alt"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div>
+                            <span class="card__index">02</span>
+                        </div>
+                        <h3>Fast Turnaround</h3>
+                        <p>Advanced tools and streamlined processes enable us to deliver comprehensive estimates in record time without compromising quality.</p>
+                    </article>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                            <span class="card__index">03</span>
+                        </div>
+                        <h3>Industry Expertise</h3>
+                        <p>Deep knowledge across all industry sectors, from healthcare and education to industrial and commercial applications.</p>
+                    </article>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon card__icon--alt"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                            <span class="card__index">04</span>
+                        </div>
+                        <h3>Dedicated Support</h3>
+                        <p>Personal project managers and direct access to our engineering team throughout your project lifecycle.</p>
+                    </article>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+                            <span class="card__index">05</span>
+                        </div>
+                        <h3>Advanced Technology</h3>
+                        <p>Latest estimation software including AutoCAD, Revit, Bluebeam, and proprietary cost analysis tools.</p>
+                    </article>
+                    <article class="card spot" data-reveal>
+                        <div class="card__top">
+                            <div class="card__icon card__icon--alt"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                            <span class="card__index">06</span>
+                        </div>
+                        <h3>Quality Assurance</h3>
+                        <p>Multi-level review process and quality control measures ensure every estimate meets our exacting standards.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta">
+            <div class="container">
+                <div class="cta__panel" data-reveal>
+                    <span class="eyebrow eyebrow--light" style="margin-bottom:24px">Work with us</span>
+                    <h2>Ready to Work with the <span class="grad-text">Best?</span></h2>
+                    <p class="lead">Join hundreds of satisfied clients who trust Precisionpro for their HVAC estimation needs. Contact us today to discuss your project.</p>
+                    <div class="cta__actions">
+                        <a href="contact.html" class="btn btn--primary magnetic">Get Sample Project <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <h3>Precisionpro</h3>
-                        <span>Engineering Services</span>
-                    </div>
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="images/precision_pro_es_logo.png" alt="Precisionpro Engineering Services" width="500" height="130" loading="lazy">
                     <p>Leading HVAC estimation and costing services with precision, expertise, and results you can trust.</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer__col">
                     <h4>Services</h4>
                     <ul>
                         <li><a href="services.html">HVAC Estimation</a></li>
@@ -312,39 +237,36 @@
                         <li><a href="services.html">Project Management</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer__col">
                     <h4>Industries</h4>
                     <ul>
-                        <li><a href="industries.html">Commercial</a></li>
-                        <li><a href="industries.html">Residential</a></li>
-                        <li><a href="industries.html">Industrial</a></li>
-                        <li><a href="industries.html">Healthcare</a></li>
+                        <li><a href="industries.html#commercial">Commercial</a></li>
+                        <li><a href="industries.html#residential">Residential</a></li>
+                        <li><a href="industries.html#industrial">Industrial</a></li>
+                        <li><a href="industries.html#healthcare">Healthcare</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer__col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>📧 precisionproes@outlook.com</li>
-                        <li>📞 +1 (860) 909-4502</li>
-                        <li>📍 Karnataka, India</li>
+                        <li><a class="with-icon" href="mailto:precisionproes@outlook.com"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>precisionproes@outlook.com</a></li>
+                        <li><a class="with-icon" href="tel:+18609094502"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+1 (860) 909-4502</a></li>
+                        <li class="with-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Karnataka, India</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer__wordmark" aria-hidden="true">Precisionpro</div>
+            <div class="footer__bottom">
                 <p>&copy; 2025 Precisionpro Engineering Services. All rights reserved.</p>
+                <a class="to-top" href="#main">Back to top <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             </div>
         </div>
     </footer>
 
-    <!-- Floating Contact Button -->
-    <div class="floating-contact">
-        <a href="contact.html" class="floating-btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-        </a>
-    </div>
+    <a href="contact.html" class="fab" aria-label="Contact us">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </a>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js" defer></script>
 </body>
 </html>
